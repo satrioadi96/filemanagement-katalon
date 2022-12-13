@@ -6,7 +6,17 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>10</initValue>
+      <name>g_shortime</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'https://the-internet.herokuapp.com'</initValue>
       <name>url_main</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>3</initValue>
+      <name>g_supershort</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

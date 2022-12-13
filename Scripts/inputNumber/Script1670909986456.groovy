@@ -17,13 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.openBrowser(GlobalVariable.url_main)
 
 WebUI.navigateToUrl('https://the-internet.herokuapp.com/')
 
 WebUI.click(findTestObject('Object Repository/inputNumber/Page_The Internet/a_Inputs'))
 
-WebUI.setText(findTestObject('Object Repository/inputNumber/Page_The Internet/input'), '11')
+def list = ['2', '6', '-7', '0', '10', '6']
 
+for (def item : list) {
+    WebUI.setText(findTestObject('Object Repository/inputNumber/Page_The Internet/input'), item)
+}
+
+//WebUI.setText(findTestObject('Object Repository/inputNumber/Page_The Internet/input'), '11')
 WebUI.closeBrowser()
 
