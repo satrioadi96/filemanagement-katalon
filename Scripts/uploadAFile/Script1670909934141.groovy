@@ -17,3 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://the-internet.herokuapp.com/')
+
+WebUI.click(findTestObject('Object Repository/uploadAFile/Page_The Internet/li_File Upload'))
+
+WebUI.click(findTestObject('Object Repository/uploadAFile/Page_The Internet/a_File Upload'))
+
+WebUI.uploadFile(findTestObject('uploadAFile/Page_The Internet/input_File Uploader_file'), 'C:\\Users\\User\\git\\filemanagement-katalon\\Data Files\\Upload Data\\SAP_KOTAK_MONO_KROM.png')
+
+WebUI.click(findTestObject('uploadAFile/Page_The Internet/input_File Uploader_file-submit'))
+
+WebUI.verifyElementPresent(findTestObject('uploadAFile/Page_The Internet/h3_File Uploaded'), 1)
+
+WebUI.closeBrowser()
+

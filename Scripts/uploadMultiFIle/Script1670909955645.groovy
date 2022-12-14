@@ -17,3 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://the-internet.herokuapp.com/')
+
+WebUI.click(findTestObject('Object Repository/uploadMultifile/Page_The Internet/a_File Upload'))
+
+WebUI.click(findTestObject('Object Repository/uploadMultifile/Page_The Internet/input_File Uploader_file-submit'))
+
+WebUI.navigateToUrl('https://the-internet.herokuapp.com/upload')
+
+WebUI.click(findTestObject('Object Repository/uploadMultifile/Page_The Internet/input_File Uploader_file-submit'))
+
+WebUI.navigateToUrl('https://the-internet.herokuapp.com/upload')
+
+WebUI.click(findTestObject('Object Repository/uploadMultifile/Page_The Internet/input_File Uploader_file-submit'))
+
+WebUI.closeBrowser()
+
