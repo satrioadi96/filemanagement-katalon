@@ -23,15 +23,20 @@ WebUI.navigateToUrl('https://the-internet.herokuapp.com/')
 
 WebUI.click(findTestObject('Object Repository/uploadMultifile/Page_The Internet/a_File Upload'))
 
-WebUI.click(findTestObject('Object Repository/uploadMultifile/Page_The Internet/input_File Uploader_file-submit'))
+def list = ['Fractal 203.png','Fractal 099.png','Fractal 119.png']
 
-WebUI.navigateToUrl('https://the-internet.herokuapp.com/upload')
+mydir = System.getProperty('user.dir')
+path = mydir + '\\Data Files\\Upload Data\\'
 
-WebUI.click(findTestObject('Object Repository/uploadMultifile/Page_The Internet/input_File Uploader_file-submit'))
+for(def item in list) {
+	WebUI.uploadFile(findTestObject('uploadAFile/Page_The Internet/input_File Uploader_file'), path+item)
+	
+	WebUI.click(findTestObject('uploadAFile/Page_The Internet/input_File Uploader_file-submit'))
+	
+	WebUI.verifyElementPresent(findTestObject('uploadAFile/Page_The Internet/h3_File Uploaded'), 1)
+	
+	WebUI.navigateToUrl('https://the-internet.herokuapp.com/upload')
+}
 
-WebUI.navigateToUrl('https://the-internet.herokuapp.com/upload')
-
-WebUI.click(findTestObject('Object Repository/uploadMultifile/Page_The Internet/input_File Uploader_file-submit'))
-
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 

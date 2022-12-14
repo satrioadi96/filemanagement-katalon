@@ -25,7 +25,10 @@ WebUI.click(findTestObject('Object Repository/uploadAFile/Page_The Internet/li_F
 
 WebUI.click(findTestObject('Object Repository/uploadAFile/Page_The Internet/a_File Upload'))
 
-WebUI.uploadFile(findTestObject('uploadAFile/Page_The Internet/input_File Uploader_file'), 'C:\\Users\\User\\git\\filemanagement-katalon\\Data Files\\Upload Data\\SAP_KOTAK_MONO_KROM.png')
+mydir = System.getProperty('user.dir')
+path = mydir + '\\Data Files\\Upload Data\\'
+
+WebUI.uploadFile(findTestObject('uploadAFile/Page_The Internet/input_File Uploader_file'), path+'SAP_KOTAK_MONO_KROM.png')
 
 WebUI.click(findTestObject('uploadAFile/Page_The Internet/input_File Uploader_file-submit'))
 
