@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>body_Internal Server Errorhtml1body1</name>
+   <tag></tag>
+   <elementGuidId>a12c6318-8de8-4612-9300-a918d2151da9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>body</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>body</value>
+      <webElementGuid>ae21c27e-c18c-4ea8-a4ca-6304a8717a69</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Internal Server Error/html[1]/body[1]</value>
+      <webElementGuid>f14ed86e-c1fd-449e-b482-3c3b1c5582de</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]</value>
+      <webElementGuid>c417ba7c-6513-4974-b331-52e510f9dcf0</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//body</value>
+      <webElementGuid>6a218833-34f9-4ab3-ba77-8c108024c90e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//body[(text() = 'Internal Server Error/html[1]/body[1]' or . = 'Internal Server Error/html[1]/body[1]')]</value>
+      <webElementGuid>e8b762f1-2ffe-48bd-8d34-f9993a5a1a0c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
